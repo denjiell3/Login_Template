@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MAIN BOX -->
+    <div class="container">
+
+        <!-- LEFT SIDE - Branding -->
+        <div class="left-side">
+            <h1 class="logo">✦ MyBrand</h1> <!-- YAHAN LOGO BADLO -->
+            <h2>Welcome Back!</h2>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+
+        <!-- RIGHT SIDE - Login Form -->
+        <div class="right-side">
+            <h2>Login</h2>
+            <p class="subtitle">Enter Your Details</p>
+
+            <form id="loginForm">
+                <!-- Email -->
+                <label>Email</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+
+                <!-- Password -->
+                <label>Password</label>
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span id="eye" onclick="togglePassword()">👁️</span>
+                </div>
+
+                <!-- Remember + Forgot -->
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">Login</button>
+
+                <!-- Divider -->
+                <div class="divider">or</div>
+
+                <!-- Social Buttons -->
+                <div class="social">
+                    <button type="button" class="social-btn">Login With Google</button>
+                    <button type="button" class="social-btn">Login with Apple</button>
+                </div>
+
+                <p class="signup-text">Don't have an account yet? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS FILE LINK -->
+    <script src="script.js"></script>
+</body>
+</html>
